@@ -12,6 +12,6 @@ package com.mycompany.randomosi;
 public class RANDOMOSI {
 
     public static void main(String[] args) {
-        System.out.println("JS");
+        System.out.println("JOSE SE LA COME");
     }
 }
