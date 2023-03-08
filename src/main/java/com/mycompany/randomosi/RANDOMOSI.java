@@ -45,7 +45,7 @@ public class RANDOMOSI {
                   Nombre=leer.next();
                   
                   while(TIPO==true){
-                      System.out.println("Ingrese el Tipo de Lavado ");
+                      System.out.println("Ingrese el Tipo de Prenda ");
                       System.out.println("1------Formal");
                       System.out.println("2------Casual");
                       System.out.println("3------Colcha");
@@ -178,7 +178,20 @@ public class RANDOMOSI {
               break;
               
           case 2:
-              
+               String Pro=" ";
+        String Invertido=" ";
+        
+        System.out.println("Ingrese la Palabra");
+        Pro=leer.next();
+        
+        
+        for(int i=Pro.length()-1;i>=0;i--){
+            Invertido+=Pro.charAt(i);
+        };
+        
+        System.out.println(Invertido);
+        
+        
               break;
           case 3:
               break;
