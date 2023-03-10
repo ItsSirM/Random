@@ -32,7 +32,7 @@ public class RANDOMOSI {
         System.out.println("------MENU------");
         System.out.println("1------Lavanderia");
         System.out.println("2------Palabras al reves");
-        System.out.println("3------Palindromo");
+        System.out.println("3------Caracter Popular");
         System.out.println("4------Salir del Sistema");
         System.out.println("Escoja una Opcion: ");
         Opcion=leer.nextInt();
@@ -178,7 +178,7 @@ public class RANDOMOSI {
               break;
               
           case 2:
-               String Pro=" ";
+        String Pro=" ";
         String Invertido=" ";
         
         System.out.println("Ingrese la Palabra");
@@ -194,6 +194,37 @@ public class RANDOMOSI {
         
               break;
           case 3:
+               String Palarga=" ";
+       char letra, popular = ' ' ;
+       int Popular1 = 0, mayor = 0;
+              System.out.println("Ingrese Cualquier Palabra:  ");
+        Palarga = leer.next();
+
+        for (int contar = 0; contar < Palarga.length(); contar++) {
+            System.out.println(Palarga.charAt(contar));
+            letra = Palarga.charAt(contar);
+            for (int conta2 = 0; conta2 < Palarga.length(); conta2++) {
+
+
+                if (letra == Palarga.charAt(conta2)) {
+                    Popular1 = Popular1 + 1;
+
+                    if (Popular1 > mayor) {
+                        popular = letra;
+                    } else if (mayor == 1 || (mayor==2 && Popular1==2)) {
+                        popular = ' ';
+                    }
+                }
+          }
+          mayor = Popular1;
+            Popular1 = 0;
+
+        }
+
+        System.out.println("---------Resultado-------");
+        System.out.println("Palabra Ingresada: "+Palarga);
+        System.out.println("Caracter Popular: "+popular);
+
               break;
           case 4:
               System.out.println("Vuelva Pronto!");
