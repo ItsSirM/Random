@@ -167,6 +167,7 @@ public class RANDOMOSI {
                      
                       
                       System.out.println("*******FACTURA*******");
+                      System.out.println("Nombre: "+Nombre);
                       System.out.println("Prendas Formales: "+ContadorF);
                       System.out.println("Prendas Casuales: "+ContadorC);
                       System.out.println("Colchas: "+ContadorCL);
